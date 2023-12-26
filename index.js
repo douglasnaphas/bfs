@@ -51,4 +51,15 @@ const sideSum = (grid, R, C, r, c) => {
   return sideSumWMemo(R, C, r, c);
 };
 
-module.exports = { maxSideLenN, sideSum };
+/**
+ * @void
+ * pre: grid[startRow, startCol] is the start of a contiguous region of adjacent
+ * equal values, extending east and west 
+ * post: matrix grid has  
+ */
+const fillRegion = ({grid, startRow, startCol, minSize, fillValue}) => {
+  // This actually is probably not what I need right now for
+  // https://leetcode.com/problems/candy-crush/
+}
+
+module.exports = { maxSideLenN, sideSum, fillRegion };
